@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Practise flipkart test" thread-count="3" parallel="tests"
+	verbose="3">
+	<listeners>
+		<listener class-name="zh.qa.amazon.listners.ExtentReportListener">
+			
+		</listener>
+	</listeners>
+
+	<test name="Login Page Test">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="zh.qa.amazon.test.LoginPageTest" />
+		</classes>
+	</test>
+	<test name="Login Page Test2">
+		<parameter name="browser" value="CHROME"></parameter>
+		<classes>
+			<class name="zh.qa.amazon.test.LoginPageTest2" />
+		</classes>
+	</test>
+	<test name="Login Page Test3">
+		<parameter name="browser" value="EDGE"></parameter>
+		<classes>
+			<class name="zh.qa.amazon.test.LoginPageTest3" />
+		</classes>
+	</test>
+</suite>
